@@ -9,7 +9,7 @@ let stepCount = 0;
 const presets = [
     {
         "name": "Glider",
-        "image": "../images/glider.jpeg",
+        "image": "../gameoflife/images/glider.jpeg",
         "description": "A small pattern that moves diagonally.",
         "data": [
             {"row": 1, "col": 2},
@@ -21,7 +21,7 @@ const presets = [
     },
     {
         "name": "Toad",
-        "image": "../images/toad.jpeg",
+        "image": "../gameoflife/images/toad.jpeg",
         "description": "A horizontal oscillator with a period of 2.",
         "data": [
             {"row": 2, "col": 2},
@@ -34,7 +34,7 @@ const presets = [
     },
     {
         "name": "Blinker",
-        "image": "../images/blinker.jpeg",
+        "image": "../gameoflife/images/blinker.jpeg",
         "description": "A vertical oscillator with a period of 2.",
         "data": [
             {"row": 2, "col": 1},
@@ -44,7 +44,7 @@ const presets = [
     },
     {
         "name": "TNT",
-        "image": "../images/tnt.jpeg",
+        "image": "../gameoflife/images/tnt.jpeg",
         "description": "BOOM!",
         "data": [
             {"row": 7, "col": 40},
