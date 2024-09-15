@@ -47,8 +47,7 @@ This document outlines the plans for building an enhanced version of the "Game o
 | 2    | Core Simulation Implementation     | Nick, Christian             | Game of Life simulation                         |
 | 2    | Enhance Frontend                  |                   | Additional frontend options                    |
 | 3    | Prototype Development             |   | Functional prototype                           |
-| 4    | Finalize Backend Features         |                   | Saving/loading configurations, user interactions|
-| 5    | Polish UI and Prepare Presentation |                    | Polished UI, project presentation              |
+| 4    | Polish UI and Prepare Presentation |   Jonathan             | Polished UI, project presentation              |
 
 ## Technical Implementation
 
