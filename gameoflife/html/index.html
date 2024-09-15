@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button id="randomBtn">Randomize</button></li>
+            <li><button id="togglePresetPanelBtn">Presets</button></li>
+        </ul>
+    </nav>
+
+    <div id="presetPanel"></div>
+
+    <div id="allthethings">
+        <div id="left"></div>
+        <div id="play"><p>Play</p></div>
+        <div id="patterns"><p>Presets</p></div>
+        <div id="right"></div>
+        <div id="exit"></div>
+        <div id="circle"></div>
+    </div>
+
+    <div id="game"></div>
+    <div id="controls">
+        <button id="playBtn">Play</button>
+        <button id="stepBtn">Step</button>
+        <button id="clearBtn">Clear</button>
+        <div id="speedControl">
+            <label for="speedSlider">Speed:</label>
+            <input type="range" id="speedSlider" min="50" max="1000" value="300">
+        </div>
+        <div id="stepCounter">Steps: 0</div>
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

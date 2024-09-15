@@ -1,0 +1,257 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    height: 73px;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li button {
+    color: white;
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+#game {
+    display: grid;
+    width: 90vw;
+    height: 80vh;
+    margin-top: 80px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: white;
+    appearance: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #61dafb;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#speedControl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+#speedSlider {
+    width: 150px;
+    cursor: pointer;
+}
+
+#stepCounter {
+    margin-left: 20px;
+}
+
+#presetPanel {
+    position: fixed;
+    left: -400px;
+    top: 73px;
+    width: 300px;
+    height: calc(100% - 73px);
+    background-color: #333;
+    padding: 20px;
+    border: none;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 10;
+}
+
+#presetPanel.open {
+    left: 0;
+}
+
+.presetItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333;
+    margin-bottom: 15px;
+}
+
+.presetItem img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.presetItem h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.presetItem p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.presetBtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.presetBtn:hover {
+    background-color: #21a1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #game {
+        width: 95vw;
+        height: 70vh;
+        margin-top: 60px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    #presetPanel {
+        width: 250px;
+        left: -250px;
+    }
+
+    #presetPanel.open {
+        left: 0;
+    }
+
+    .presetItem img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .presetItem h3 {
+        font-size: 16px;
+    }
+
+    .presetItem p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #game {
+        width: 100vw;
+        height: 60vh;
+        margin-top: 50px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    #presetPanel {
+        width: 200px;
+        left: -200px;
+    }
+
+    #presetPanel.open {
+        left: 0;
+    }
+
+    .presetItem img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .presetItem h3 {
+        font-size: 14px;
+    }
+
+    .presetItem p {
+        font-size: 10px;
+    }
+
+    #speedSlider {
+        width: 100px;
+    }
+}

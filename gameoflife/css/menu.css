@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #allthethings {
+            width: 0;
+            height: 0;
+            border-left: 300px solid transparent;
+            border-right: 300px solid transparent;
+            border-top: 300px solid transparent;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+
+        #exit {
+            height: 30px;
+            width: 30px;
+            background: #006680;
+            border: 1px solid black;
+            border-radius: 50px;
+            position: absolute;
+            top: -30px;
+            right: -15px;
+            z-index: 50;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        #exit:after {
+            content: "";
+            display: block;
+            height: 15px;
+            width: 15px;
+            background: transparent;
+            border-radius: 50px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border: 3px solid orange;
+            border-top-color: transparent;
+        }
+
+        #exit:before {
+            content: "";
+            display: block;
+            height: 10px;
+            width: 3px;
+            background: orange;
+            position: absolute;
+            right: 13px;
+            top: 6px;
+        }
+
+        #circle {
+            height: 40px;
+            width: 40px;
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 50px;
+            position: absolute;
+            top: -35px;
+            right: -20px;
+            z-index: 40;
+        }
+
+        #exit:hover {
+            background: #7A0000;
+        }
+
+        #play, #patterns {
+            position: relative;
+            background: #006680;
+            color: orange;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Shadows Into Light', cursive;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        #play {
+            bottom: 330px;
+            right: 300px;
+            height: 50px;
+            width: 600px;
+        }
+
+        #patterns {
+            bottom: 345px;
+            right: 240px;
+            height: 50px;
+            width: 500px;
+        }
+
+        #play:hover, #patterns:hover {
+            background: #7A0000;
+            color: white;
+            transform: rotate(-2deg);
+        }
+
+        #left {
+            height: 100px;
+            width: 600px;
+            background: orange;
+            position: absolute;
+            z-index: 6;
+            transform: rotate(45deg);
+            top: -175px;
+            right: -104px;
+            border-top: 1px solid white;
+        }
+
+        #right {
+            height: 100px;
+            width: 600px;
+            background: orange;
+            position: absolute;
+            top: -229px;
+            transform: rotate(-45deg);
+            z-index: 7;
+            left: -56px;
+            border-top: 1px solid white;
+        }
+
+        #play p, #patterns p {
+            margin: 0;
+        }
